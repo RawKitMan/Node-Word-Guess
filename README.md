@@ -1,2 +1,2 @@
-# Npde-Word-Guess
+# Node-Word-Guess
 Word guess/Hangman style game using Node.js
