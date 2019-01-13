@@ -4,10 +4,10 @@ let Letter = function(letter){
     
     this.displayLetter = function(){
         if(this.guessed){
-            return this.letter;
+            return this.letter + " ";
         }
         else{
-            return "_";
+            return "_ ";
         };
     };
 
@@ -15,7 +15,9 @@ let Letter = function(letter){
         if(guess === this.letter){
             this.guessed = true;
         }
+        this.guessed;
     };
 };
+
 
 module.exports = Letter;

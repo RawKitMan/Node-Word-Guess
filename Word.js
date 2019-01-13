@@ -17,7 +17,12 @@ let Word = function(word){
 
         //Needs to use the display letter function. Add this in tomorrow.
         this.lettersArr.forEach(function(element){
-            wordString += element;
+           if(element === " "){
+               wordString += "  ";
+           }
+           else{
+               wordString += element.displayLetter();
+           }
         });
         return wordString;
     }
@@ -25,7 +30,7 @@ let Word = function(word){
     this.checkGuessWord = function(letterGuess){
         this.lettersArr.forEach(function(element){
             
-            if(element.letter !== undefined){
+            if(element.letter !== " "){
                 element.checkGuess(letterGuess);
             }
         });
