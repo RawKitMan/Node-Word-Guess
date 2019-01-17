@@ -18,7 +18,7 @@ let numGuesses;
 //This function creates a new game with a new word.
 function playGame() {
 
-    let newWord = wordArray[Math.floor(Math.random() * 8)]
+    let newWord = wordArray[Math.floor(Math.random() * wordArray.length)]
     //First we pick our new word randomly from the word array
     let word = new Word(newWord);
 
